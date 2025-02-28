@@ -7,61 +7,94 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>Euchre Card Game</h1>
-        
-        <div class="game-status">
-            <div id="trump-suit">Trump: <span id="current-trump">None</span></div>
-            <div id="score-display">
-                <div>Your Team: <span id="player-team-score">0</span></div>
-                <div>Computer Team: <span id="computer-team-score">0</span></div>
-            </div>
-            <div id="game-message">Welcome to Euchre! Click "Deal" to start.</div>
-        </div>
-
-        <div class="game-board">
-            <div class="player player-left" id="player-left">
-                <div class="player-name">Left</div>
-                <div class="player-cards"></div>
-            </div>
-            
-            <div class="player player-top" id="player-top">
-                <div class="player-name">Top</div>
-                <div class="player-cards"></div>
-            </div>
-            
-            <div class="player player-right" id="player-right">
-                <div class="player-name">Right</div>
-                <div class="player-cards"></div>
-            </div>
-            
-            <div class="table-center">
-                <div class="played-cards" id="played-cards"></div>
-                <div class="trump-card-area">
-                    <div id="trump-card"></div>
+    <div class="main-container">
+        <!-- Left Banner -->
+        <div class="banner banner-left">
+            <div class="banner-content">
+                <h3>PregnantMeal</h3>
+                <p>Healthy Meals for You and Your Baby</p>
+                <p>Simple meal plans designed for each stage of your pregnancy journey.</p>
+                <a href="https://pregnantmeal.com/" target="_blank" class="banner-button">Visit Site</a>
+                <div class="banner-footer">
+                    <p>Made by <a href="https://x.com/tech_nurgaliyev" target="_blank">@tech_nurgaliyev</a></p>
                 </div>
             </div>
+        </div>
+
+        <!-- Game Container -->
+        <div class="game-container">
+            <h1>Euchre Card Game</h1>
             
-            <div class="player player-bottom" id="player-bottom">
-                <div class="player-name">You</div>
-                <div class="player-cards" id="player-hand"></div>
+            <div class="game-status">
+                <div id="trump-suit">Trump: <span id="current-trump">None</span></div>
+                <div id="score-display">
+                    <div>Your Team: <span id="player-team-score">0</span></div>
+                    <div>Computer Team: <span id="computer-team-score">0</span></div>
+                </div>
+                <div id="game-message">Welcome to Euchre! Click "Deal" to start.</div>
+            </div>
+
+            <div class="game-board">
+                <div class="player player-left" id="player-left">
+                    <div class="player-name">Left</div>
+                    <div class="player-cards"></div>
+                </div>
+                
+                <div class="player player-top" id="player-top">
+                    <div class="player-name">Top</div>
+                    <div class="player-cards"></div>
+                </div>
+                
+                <div class="player player-right" id="player-right">
+                    <div class="player-name">Right</div>
+                    <div class="player-cards"></div>
+                </div>
+                
+                <div class="table-center">
+                    <div class="played-cards" id="played-cards"></div>
+                    <div class="trump-card-area">
+                        <div id="trump-card"></div>
+                    </div>
+                </div>
+                
+                <div class="player player-bottom" id="player-bottom">
+                    <div class="player-name">You</div>
+                    <div class="player-cards" id="player-hand"></div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <button id="deal-button">Deal</button>
+                <div id="bidding-controls" class="hidden">
+                    <button id="pass-button">Pass</button>
+                    <button id="order-up-button">Order Up</button>
+                    <div id="trump-selection" class="hidden">
+                        <button class="trump-button" data-suit="hearts">Hearts</button>
+                        <button class="trump-button" data-suit="diamonds">Diamonds</button>
+                        <button class="trump-button" data-suit="clubs">Clubs</button>
+                        <button class="trump-button" data-suit="spades">Spades</button>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="game-controls">
-            <button id="deal-button">Deal</button>
-            <div id="bidding-controls" class="hidden">
-                <button id="pass-button">Pass</button>
-                <button id="order-up-button">Order Up</button>
-                <div id="trump-selection" class="hidden">
-                    <button class="trump-button" data-suit="hearts">Hearts</button>
-                    <button class="trump-button" data-suit="diamonds">Diamonds</button>
-                    <button class="trump-button" data-suit="clubs">Clubs</button>
-                    <button class="trump-button" data-suit="spades">Spades</button>
+        <!-- Right Banner -->
+        <div class="banner banner-right">
+            <div class="banner-content">
+                <h3>MVP AGENCY</h3>
+                <p>From idea to MVP launch in 2 weeks</p>
+                <p>Launch your MVP in weeks, not months. No hidden fees.</p>
+                <a href="https://mvpagency.org/" target="_blank" class="banner-button">Book a Call</a>
+                <div class="banner-footer">
+                    <p>Made by <a href="https://x.com/tech_nurgaliyev" target="_blank">@tech_nurgaliyev</a></p>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="main-footer">
+        <p>Euchre Card Game | Made by <a href="https://x.com/tech_nurgaliyev" target="_blank">@tech_nurgaliyev</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

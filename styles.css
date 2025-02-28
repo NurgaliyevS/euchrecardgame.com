@@ -320,6 +320,32 @@ button:disabled {
     flex-grow: 1;
 }
 
+/* Game description for SEO */
+.game-description {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+.game-description h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.game-description h3 {
+    color: #2c3e50;
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+}
+
+.game-description p {
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
 /* Responsive design */
 @media (max-width: 1200px) {
     .main-container {
